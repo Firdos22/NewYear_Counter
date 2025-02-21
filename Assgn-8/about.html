@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About - New Year 2026</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .card {
+        width: 70%;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+        background: #ddbebe;
+        margin: 50px auto;
+        text-align: center;
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .card-body {
+        padding: 20px;
+      }
+
+      .btn {
+        width: 100%;
+        border-radius: 5px;
+        background: #007bff;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        color: white;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background: #0056b3;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      text-align: center;
+      padding: 50px;
+      background-color: #f1ecec;
+      color: rgb(44, 9, 9);
+    "
+  >
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">New Year 2026</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="countdown.html">Countdown</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="card">
+      <img src="./about.png" alt="About Image" />
+      <div class="countdown-overlay" id="countdown"></div>
+      <div class="card-body">
+        <h2 class="card-title">About</h2>
+        <p>
+          This page uses jQuery Countdown plugin, Bootstrap ScrollSpy, and
+          jQuery UI.
+        </p>
+        <a href="index.html" class="btn btn-primary" style="margin-top: 20px"
+          >Back to Home</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

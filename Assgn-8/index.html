@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Redirecting...</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+      /* Fullscreen Loader */
+      #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      #loader img {
+        width: 150px;
+        height: auto;
+      }
+
+      .message {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="loader">
+      <div>
+        <img src="./Dinosaurs Sticker.gif" alt="Loading..." />
+        <p class="message">Redirecting to Home...</p>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        setTimeout(function () {
+          window.location.href = "home.html"; // Redirect to home page after 3 seconds
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
